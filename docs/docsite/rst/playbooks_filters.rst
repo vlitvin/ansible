@@ -577,6 +577,16 @@ That will create the following output:
        ###
         #
 
+Also you can customise decoration symbol of your choice::
+
+    {{ "Custom decoration" | comment('plain', decoration='; ') }}
+
+Will produce::
+
+    ; 
+    ; Custom decoration
+    ; 
+
 The filter can also be applied to any Ansible variable. For example to
 make the output of the ``ansible_managed`` variable more readable, we can
 change the definition in the ``ansible.cfg`` file to this:
